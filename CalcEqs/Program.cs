@@ -26,7 +26,7 @@ namespace CalcEqs
             eqsFunction = new SimpleIterationCalc(-4, -3.5, 0.583, 1E-4, logger);
             Console.WriteLine($"{new String(' ', 24)}Xn ## {new String(' ', 11)}|X(n) - X(n+1)|");
             res = eqsFunction.Calc((x) => { return (Math.Pow(x, 3) + 6 * Math.Pow(x, 2) + 2) / (-9); }, -3.75);
-            Console.WriteLine($"Результат:: {res}");
+            Console.WriteLine($"Результат: {res}");
         }
     }
 }
